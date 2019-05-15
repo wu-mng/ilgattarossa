@@ -1,0 +1,16 @@
+<figure>
+    {% if include.href %}
+    <a href="{{ include.href }}">
+    {% endif %}
+      <img src="{{ site.images }}/{{ include.src }}"
+            srcset="{% for size in site.srcset %}{{ site.responsive }}/{{ size }}/{{ include.src }} {{ size }}w,{% endfor %} {{ site.images }}/{{ include.src }} 1920w"
+            id="{{ include.id | default: "" }}"         
+            class="img-fluid {{ include.class | default: "" }}"        
+            width="{{ include.width | default: "" }}"
+            height="{{ include.height | default: "" }}"
+            alt={% if include.alt %} "{{ include.alt }}" {% else %} "{{ include.src }}" {% endif %}>
+    {% if include.href %}
+    </a>
+    {% endif %}
+   {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>

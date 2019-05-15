@@ -1,0 +1,52 @@
+<section class="post mb-1 p-3 grid-item">
+    {% if page.title == "Eventi" %}
+    <header>
+    {% include img-featured.html type="archive" %}
+    </header>
+    {% endif %}
+    
+    {% if page.title == "Eventi" %}
+    <article class="single py-5 px-md-5 mx-auto">
+    {% else %}    
+    <article>
+    {% endif %}
+        <section>
+            <time datetime="{{ post.date }}">
+                <p>{{ post.date | date_to_string }}</p>
+            </time>
+            {% if page.title == "Eventi" %}
+            <h2 class="py-1 post-title">{{ post.title }}</h2>
+            <p>{{ post.subtitle }}</p>
+            {% else %}
+            <h2 class="mb-4 post-title">{{ post.title }}<br>
+                <span>{{ post.subtitle }}</span>
+            </h2>
+            {% endif %}
+        </section>
+         
+        {% if page.title == "Eventi" %}
+        <section id="content" class="my-5 mx-auto">
+            {{ post.content | truncatewords: 160 | markdownify }}
+        </section>
+        {% endif %}
+        {% if page.title == "Foto" %}
+        <header>
+            {% include img-featured.html type="archive" %}
+        </header>
+        {% endif %}
+        {% if page.title == "Video" %}
+        <figure class="embed-responsive embed-responsive-16by9">
+            {{ post.video }}
+        </figure>
+        <figcaption>{{ post.credits }}</figcaption>
+        {% endif %}
+        
+        {% if page.title == "Eventi" %}
+        <a href="{{ site.url }}{{  post.url }}">
+            <button type="button" class="btn btn-danger">
+                continua a leggere...
+            </button>
+        </a>
+        {% endif %}
+    </article>
+</section>

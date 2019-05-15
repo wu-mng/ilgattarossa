@@ -1,0 +1,26 @@
+<footer class="post mb-1 p-4 p-md-5">
+    <p>
+    <img src="/assets/images/igr_sticker.png" 
+            alt="IlGattarossa sticker" width="150" height="150" />            
+    </p>
+    <section class="share-box mt-4 mb-2">
+        <h6>condividi su:</h6><br>    
+        <a class="f" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{site.baseurl}}{{ page.url }}" onclick="window.open(this.href, 'mywin',
+        'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" ><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a class="t" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{site.baseurl}}{{ page.url }}" onclick="window.open(this.href, 'mywin',
+        'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"><i class="fab fa-twitter-square fa-2x"></i></a>
+        <a class="r" href="http://www.reddit.com/submit?url={{ site.url }}{{site.baseurl}}{{ page.url }}" onclick="window.open(this.href, 'mywin',
+        'left=20,top=20,width=900,height=500,toolbar=1,resizable=0'); return false;" ><i class="fab fa-reddit-square fa-2x"></i></a>
+        <a class="e" href="mailto:?subject={{ page.title }}&amp;body=Check out this site {{ site.url }}{{site.baseurl}}{{ page.url }}"><i class="fas fa-envelope-square fa-2x"></i></a> 
+    </section>    
+    <ul class="igr-tag pb-5">
+        {% for tag in post.tags %}
+        <li>
+<!--        this links to the "tags" page
+            <a href="/tags#{{ tag | uri_escape | downcase  }}">
+-->
+            #{{ tag }}
+        </li>
+        {% endfor %}
+    </ul>
+</footer>

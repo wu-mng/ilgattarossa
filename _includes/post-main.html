@@ -1,0 +1,33 @@
+<section class="post p-5">
+    <article class="single mt-5 mx-auto">
+        <section>
+            <time datetime="{{ post.date }}">
+                <p>{{ post.date | date_to_string }}</p>
+            </time>
+            {% if post.category == "Eventi" %}
+            <h1 class="post-title pt-3 pt-md-5">{{ post.title }}</h1>
+            <p class="subtitle">{{ post.subtitle }}</p>
+            {% else %}
+            <h1 class="post-title pt-md-5">{{ post.title }}<br>
+                <span>{{ post.subtitle }}</span>
+            </h1>
+            {% endif %}                 
+        </section>
+        
+        <section id="media" class="my-3 my-md-5">
+        {% if post.category == "Foto" %}
+        {% include img-gallery.html %}
+        {% endif %}        
+        {% if post.category == "Video" %}
+        <figure class="embed-responsive embed-responsive-16by9">
+            {{ post.video }}
+        </figure>
+        <figcaption><p>{{ post.credits }}</p></figcaption>
+        {% endif %}             
+        </section>
+         
+        <section id="content" class="my-3 my-lg-5 mx-auto">
+            {{ post.content | markdownify }}
+        </section>        
+    </article>
+</section>

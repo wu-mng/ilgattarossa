@@ -1,0 +1,63 @@
+<aside id="related" class="post mb-5 p-5 mx-auto">
+{% assign showRelatedPosts = 3 %}
+
+{% if page.category == "Video" %}
+{% assign events = site.posts | where: "category", "Video" %}
+{% elsif page.category == "Foto" %}
+{% assign events = site.posts | where: "category", "Foto" %}
+{% else %}
+{% assign events = site.posts | where: "category", "Eventi" %}
+{% endif %}
+
+{% capture posts %} 
+    {% for post in events %}
+        {% if post.url != page.url %}
+            {% assign matchingTags = "" | split: ","  %}
+    
+            {% for tag in post.tags %}
+                {% assign currentPostTag = tag | downcase %}
+                {% assign tagsPage = page.tags | downcase %}
+                {% if tagsPage contains currentPostTag %}
+                    {% assign matchingTags = matchingTags | push: currentPostTag %}    
+                {% endif %}
+            {% endfor %}
+            
+            {% assign tagsTotal = matchingTags.size %}
+    
+            {% if tagsTotal < 10 %}<!-- -->
+                {% assign tagsTotal = tagsTotal | prepend: "0" %}
+            {% else %}
+                {% assign tagsTotal = tagsTotal  %}
+            {% endif %}
+            
+            |
+            <article class="p-2">
+<!--
+                <strong>{{ tagsTotal }} tags</strong>
+-->
+                <header>    
+                    <h5 class="title pb-1">{{ post.title }}</h5>    
+                </header>
+                <section class="mx-auto">
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                    {% include img-featured.html type="related" %}
+                </a>
+                </section>
+                <small>{{ matchingTags | join: " #" | prepend: "#" }}</small>
+            </article>
+                
+        {% endif %}
+    {% endfor %}
+{% endcapture %}
+
+{% assign relatedPosts = posts | split: '|' | sort | reverse %}
+
+<header class="py-3">
+    <h4>Potrebbero interessarti:</h4>
+    <hr>
+</header>
+
+{% for i in (0..showRelatedPosts) %}
+    {{ relatedPosts[i] }}
+{% endfor %}
+</aside>

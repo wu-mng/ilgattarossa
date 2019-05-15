@@ -1,0 +1,14 @@
+---
+layout: default
+title: Eventi
+description: Tutti gli eventi de IlGattaRossa
+permalink: "/eventi"
+category: Archive
+---
+<main role="main" id="archive" class="grid">
+<section class="grid-sizer"></section>
+{% assign eventi = site.posts | where: "category", "Eventi" %}
+{% for post in eventi %}
+{% include post-archive-main.html %}
+{% endfor %}
+</main>

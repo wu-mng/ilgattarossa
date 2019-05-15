@@ -1,0 +1,21 @@
+{% if include.type == "archive" or include.type == "home" %}
+<a href="{{ site.url }}{{  post.url }}">
+{% endif %}    
+<img id="featured-image" src="{{ site.featured }}/{{ post.image }}" 
+        src="{% for size in site.srcset %}{{ site.featured }}/{{ size }}/{{ post.image }} {{ size }}w,{% endfor %} {{ site.featured }}/{{ post.image }} 1920w"
+        {% if include.type == "home" %}
+        sizes="(max-width: 575px) 100vw, (max-width: 991px) 50vw, 33vw"
+        {% endif %}    
+        {% if include.type == "archive" %}
+        sizes="(max-width: 991px) 100vw, (max-width: 1199px) 50vw, 33vw"
+        {% endif %}
+        {% if include.type == "video" %}
+        sizes="(max-width: 480px) 380px, (max-width: 1199px) 640px, 33vw"
+        {% endif %}
+        {% if include.type == "related" %}
+        sizes="320px"
+        {% endif %}
+        alt="{{ post.image }}" class="img-fluid img-full">
+{% if include.type == "archive" or include.type == "home" %}
+</a>
+{% endif %}

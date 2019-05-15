@@ -1,0 +1,14 @@
+---
+layout: default
+title: Foto
+description: Tutte le foto de IlGattaRossa
+permalink: "/foto"
+category: Archive
+---
+<main role="main" id="archive" class="grid">
+<section class="grid-sizer"></section>
+{% assign foto = site.posts | where: "category", "Foto" %}
+{% for post in foto %}
+{% include post-archive-main.html %}
+{% endfor %}
+</main>

@@ -1,0 +1,58 @@
+locale:         "it-IT"
+# feed and opengraph options
+title:          "ilgattarossa.org"
+author:         "1G°R"
+description:    "IlGattarossa è (stato) il folle tentativo di un gruppo di artisti di portare la propria Opera al pubblico senza mediazioni"
+lang:           "it_IT"
+# default paths for images
+images:         /assets/images
+featured:       /assets/images/featured
+galleries:      /assets/images/galleries
+responsive:     /assets/images/responsive
+# sizes for responsive images
+srcset:         
+    - 380
+    - 640
+    - 960
+    - 1280
+    - 1600
+
+defaults:    
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      image: /assets/images/igr_sticker_45.png
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      description: "IlGattarossa è (stato) il folle tentativo di un gruppo di artisti di portare la propria Opera al pubblico senza mediazioni"
+  - scope:
+      path: "_posts/eventi"
+      type: "posts"  
+    values:
+      category: "Eventi"
+      layout: event
+      permalink: /eventi/:slug
+  - scope:
+      path: "_posts/foto"
+      type: "posts"  
+    values:
+      category: "Foto"
+      subtitle: "Galleria Fotografica"
+      credits: "Foto di Alberto Gori"
+      permalink: /foto/:slug      
+  - scope:
+      path: "_posts/video"
+      type: "posts"  
+    values:
+      category: "Video"
+      subtitle: "Documentazione dell'Evento"
+      permalink: /video/:slug
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+    

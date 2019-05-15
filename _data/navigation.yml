@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: Eventi
+  link: /eventi
+- name: Foto
+  link: /foto
+- name: Video
+  link: /video        

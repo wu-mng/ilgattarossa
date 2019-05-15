@@ -1,0 +1,14 @@
+---
+layout: default
+title: Video
+description: Tutti i video de IlGattaRossa
+permalink: "/video"
+category: Archive
+---
+<main role="main" id="archive" class="grid">
+<section class="grid-sizer"></section>
+{% assign video = site.posts | where: "category", "Video" %}
+{% for post in video %}
+    {% include post-archive-main.html %}
+{% endfor %}
+</main>

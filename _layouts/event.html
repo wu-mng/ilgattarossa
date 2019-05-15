@@ -1,0 +1,23 @@
+---
+layout: default
+--- 
+{% assign post = page %}
+<header>
+{% include img-featured.html %}
+{% if page.credits %}
+<section class="credits mb-1 py-2 px-3">
+    <small><strong>{{ page.title }}</strong> è {{ page.credits }}</small>
+</section>
+{% endif %}
+</header>
+<main role="main">
+{% for post in site.posts reversed %}
+{% if post.event == page.event %}
+{% include post-main.html %}
+{% include post-footer.html %}
+{% endif %}
+{% endfor %}    
+</main>
+
+{% include post-related.html %} 
+

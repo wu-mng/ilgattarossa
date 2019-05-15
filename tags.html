@@ -1,0 +1,25 @@
+---
+layout: default
+title: tags
+---
+<section class="post">              
+    <article class="py-5 px-5 mx-auto">
+
+{% assign sorted_tags = site.tags | sort %}
+{% for tag in sorted_tags %}
+    {% assign sorted_posts = tag[1] | sort: 'title' %}
+        <h3 id="{{tag[0] | uri_escape | downcase }}">{{ tag[0] }}</h3>
+        <ul>
+        {% for post in sorted_posts %}
+            <li>
+                <a href="{{ site.url }}{{  post.url }}">
+                    {{  post.title }}
+                </a>
+            </li>
+        {% endfor %}
+        </ul>
+{% endfor %}
+
+    </article>
+</section>
+        
