@@ -204,9 +204,7 @@ figcaption {
     font-size: small;
     padding: 0 3px;
     text-align: right;
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    white-space: nowrap;     
+    hyphens: none;
 }
 
 /* play icon stuff
