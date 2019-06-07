@@ -2,7 +2,7 @@
 event: Tutto Bianco Tranne La Notte
 image: 570437779_640.jpg
 video: <iframe data-src="https://player.vimeo.com/video/166370667?color=d21f1b&title=0&byline=0&portrait=0" class="lazyload" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-credits: Video realizzato da Luca Mauceri
+credits: Video di Luca Mauceri
 tags: [mediamashstudio, arte, disegno, installazione, firenze, notte bianca]
 
 ---

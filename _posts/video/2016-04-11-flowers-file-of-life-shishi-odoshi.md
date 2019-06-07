@@ -4,7 +4,7 @@ image: 565076285_640.jpg
 video: <iframe data-src="https://player.vimeo.com/video/162424950?color=d21f1b&title=0&byline=0&portrait=0" class="lazyload" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 title: "Shishi Odoshi"
 subtitle: Documentazione dell'Opera
-credits: Opera di Luca Mauceri e Iacopo Rachlik. Video realizzato da Luca Mauceri e Iacopo Rachlik
+credits: Opera di Luca Mauceri e Iacopo Rachlik. Video di Luca Mauceri e Iacopo Rachlik
 tags: [Alberto Gori, Andy Warhol, Arte, Flowers, Francesca Pirami, Iacopo Rachlick, IlGattaRossa, Installazione, Krishna Biswas, Luca Mauceri, MediaMashStudio, now!, Videoarte]
 ---
 **SHISHI ODOSHI**, Luca Mauceri - Jacopo Rachlik, 2016.

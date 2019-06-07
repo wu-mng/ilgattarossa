@@ -4,7 +4,7 @@ image: lbf13_video.jpg
 video: <iframe data-src="https://www.youtube-nocookie.com/embed/dbKq2ee6w9A" class="lazyload" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 title: "La Bellezza Fa 13"
 subtitle: Promo#1
-credits: Video realizzato da Luca Mauceri
+credits: Video di Luca Mauceri
 tags: []
 ---
 La Bellezza Fa 13 Una mostra de Il GattaRossa (www.ilgattarossa.org) e Magma (www.magmacollective.com) in occasione del Monna Lisa Day. 

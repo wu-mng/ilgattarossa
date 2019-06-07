@@ -4,7 +4,7 @@ image: 541588955_640.jpg
 video: <iframe data-src="https://player.vimeo.com/video/143885136?color=d21f1b&title=0&byline=0&portrait=0" class="lazyload" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 title: "L'Arte dello Schermo"
 subtitle: Video Promo#1
-credits: Video realizzato da Luca Mauceri
+credits: Video di Luca Mauceri
 tags: [Arte, Arte dello Schermo, IlGattaRossa, Installazione, MediaMashStudio, Videoarte]
 ---
 **L’ Arte dello Schermo** è una rassegna di approfondimento sul linguaggio della video arte per stimolare l’incontro e lo scambio tra artisti e pubblico in un contesto non ufficiale. 

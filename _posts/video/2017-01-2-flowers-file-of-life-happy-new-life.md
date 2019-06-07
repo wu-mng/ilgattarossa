@@ -4,7 +4,7 @@ image: 610639573_640.jpg
 video: <iframe data-src="https://player.vimeo.com/video/197778561?color=d21f1b&title=0&byline=0&portrait=0" class="lazyload" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 title: "Happy New Life"
 subtitle: Documentazione dell'Opera
-credits: Opera di Alberto Gori. Video realizzato da Alberto Gori, riprese di Luca Mauceri
+credits: Opera di Alberto Gori. Video di Alberto Gori, riprese di Luca Mauceri
 tags: [	Alberto Gori, Andy Warhol, Arte, Arte dello Schermo, Flowers, Francesca Pirami, Iacopo Rachlick, IlGattaRossa, Installazione, Krishna Biswas, Luca Mauceri, MediaMashStudio, now!, Videoarte]
 ---
 **HAPPY_NEW_LIFE**, Alberto Gori, 2016<br /> 

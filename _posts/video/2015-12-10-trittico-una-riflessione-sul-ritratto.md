@@ -4,7 +4,7 @@ image: 547483114_1080.jpg
 title: "Trittico. Una riflessione sul Ritratto"
 video: <iframe data-src="https://player.vimeo.com/video/148519980?color=d21f1b&title=0&byline=0&portrait=0" class="lazyload" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 subtitle: Video Promo
-credits: Video realizzato da Luca Mauceri
+credits: Video realizzato di Luca Mauceri
 tags: [Alessandro Di Grande, Andrea Lucchesi, Arte, Disegno, Erika Giansanti, Firenze, Incisione, Pittura, puntasecca, ritratto, Sdrucciolo dei Pitti, Sebastiano Benegiamo, Trittico]
 ---
 **TRITTICO**. Una Riflessione sul Ritratto.

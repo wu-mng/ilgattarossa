@@ -23,6 +23,7 @@ defaults:
       type: "pages"
     values:
       image: /assets/images/igr_sticker_45.png
+      title: "ilgattarossa.org"
   - scope:
       path: ""
       type: "posts"

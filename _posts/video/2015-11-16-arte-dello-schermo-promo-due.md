@@ -4,7 +4,7 @@ image: ars_igr.png
 video: <iframe data-src="https://player.vimeo.com/video/145888332?color=d21f1b&title=0&byline=0&portrait=0" class="lazyload" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 title: "L'Arte dello Schermo"
 subtitle: Video Promo#2
-credits: Video realizzato da Alberto Gori
+credits: Video di Alberto Gori
 tags: [Arte, Arte dello Schermo, IlGattaRossa, Installazione, MediaMashStudio, Videoarte]
 ---
 // L'ARTE DELLO SCHERMO //
