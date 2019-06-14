@@ -22,7 +22,6 @@
 <script src="/assets/js/masonry.pkgd.min.js"></script>
 <script src="/assets/js/lazysizes.min.js"></script>
 <script src="/assets/js/script.js"></script>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <title>{{ page.title }} - IlGattaRossa 1.314</title>
 {% feed_meta %}
 {% seo %}
@@ -31,16 +30,5 @@
 {% include header.html %}
 {{ content }}
 {% include footer.html %}
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 ---
 event: Mistica Napoleonica
-image: mn.jpg
+image: DSC_0429.jpg
 gallery: mistica-napoleonica
 tags: [Arte, Buster Keaton, Ceramica, Dolci, Firenze, Mistica Napoleonica, Napoleone, Performance, Pittura, Scultura, Stefano Pascolini]
 ---
