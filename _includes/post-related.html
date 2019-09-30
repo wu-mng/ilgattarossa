@@ -35,8 +35,10 @@
 <!--
                 <strong>{{ tagsTotal }} tags</strong>
 -->
-                <header>    
-                    <h5 class="title pb-1">{{ post.title }}</h5>    
+                <header>
+                    <a href="{{ site.baseurl }}{{ post.url }}">    
+                    <h5 class="title pb-1">{{ post.title }}</h5>
+                    </a>    
                 </header>
                 <section class="mx-auto">
                 <a href="{{ site.baseurl }}{{ post.url }}">

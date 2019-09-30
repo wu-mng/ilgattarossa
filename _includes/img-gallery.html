@@ -1,3 +1,4 @@
+<p class="text-left">{{ post.description }}</p>
 <section class="image-gallery grid">
 <section class="grid-sizer"></section>
 {% for file in site.static_files %}
@@ -17,7 +18,7 @@
 -->
             <img src="{{ file.path }}" class="grid-item" 
                     srcset="{% for size in site.srcset %}{{ site.galleries }}/{{ post.gallery}}/responsive/{{ size }}/{{ file.name }} {{ size }}w,{% endfor %} {{ file.path }} 1920w"
-                    sizes="380px" alt="{{ file.name }}" />
+                    sizes="380px" alt="IlGattaRossa - {{ page.date | date_to_string }} - {{ page.title }} - {{ filename }}" title="{{ filename }}" />
 <!--
             </a>
 -->
@@ -30,4 +31,4 @@
   {% endif %}
 {% endfor %}
 </section>
-<figcaption>{{ post.credits }}</figcaption>
+<figcaption class="text-left">{{ post.credits }}</figcaption>

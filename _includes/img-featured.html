@@ -3,7 +3,7 @@
 {% endif %}
 {% if post.category == "Foto" %}
 <img id="featured-image" src="{{ site.galleries }}/{{ post.gallery}}/{{ post.image }}" 
-srcset="{% for size in site.srcset %}{{ site.galleries }}/{{ post.gallery}}/responsive/{{ size }}/{{ post.image }} {{ size }}w,{% endfor %} {{ site.galleries }}/{{ post.gallery}}/{{ post.image }} 1920w"
+srcset="{% for size in site.srcset %}{{ site.galleries }}/{{ post.gallery}}/responsive/{{ size }}/{{ post.image }} {{ size }}w,{% endfor %} {{ site.galleries }}/{{ post.gallery }}/{{ post.image }} 1920w"
 {% else %}
 <img id="featured-image" src="{{ site.featured }}/{{ post.image }}"
 srcset="{% for size in site.srcset %}{{ site.featured }}/{{ size }}/{{ post.image }} {{ size }}w,{% endfor %} {{ site.featured }}/{{ post.image }} 1920w"
