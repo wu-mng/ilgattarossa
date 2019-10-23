@@ -12,7 +12,25 @@
     {% endif %}
         <section>
             <time datetime="{{ post.date }}">
-                <p>{{ post.date | date_to_string }}</p>
+            <p>
+            {% assign m = post.date | date: "%-m" %}
+              {{ post.date | date: "%-d" }}
+                {% case m %}
+                    {% when '1' %}Gennaio
+                    {% when '2' %}Febbraio
+                    {% when '3' %}Marzo
+                    {% when '4' %}Aprile
+                    {% when '5' %}Maggio
+                    {% when '6' %}Giugno
+                    {% when '7' %}Luglio
+                    {% when '8' %}Agosto
+                    {% when '9' %}Settembre
+                    {% when '10' %}Ottobre
+                    {% when '11' %}Novembre
+                    {% when '12' %}Dicembre
+                {% endcase %}
+                {{ post.date | date: "%Y" }}
+            </p>
             </time>
             {% if page.title == "Eventi" %}
             <h2 class="py-1 post-title">{{ post.title }}</h2>

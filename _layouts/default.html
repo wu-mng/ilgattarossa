@@ -1,6 +1,7 @@
 <!doctype html>
-<html lang="it-IT">
-<head>
+<html lang="{{ site.lang }}">
+<head prefix="og: http://ogp.me/ns#;">
+<link rel="canonical" href="{{ page.url | absolute_url }}" />    
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
@@ -8,23 +9,75 @@
 <link rel="stylesheet" href="/assets/css/fontawesome.min.css" />
 <link rel="stylesheet" href="/assets/fonts/fonts.css" />
 <link rel="shortcut icon" href="/assets/images/icons/favicon.ico" type="image/x-icon" />
-<link rel="apple-touch-icon" href="/assets/images/icons/apple-touch-icon.png" />
-<link rel="apple-touch-icon" sizes="57x57" href="/assets/images/icons/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon" sizes="72x72" href="/assets/images/icons/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon" sizes="76x76" href="/assets/images/icons/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon" sizes="114x114" href="/assets/images/icons/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon" sizes="120x120" href="/assets/images/icons/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon" sizes="144x144" href="/assets/images/icons/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon" sizes="152x152" href="/assets/images/icons/apple-touch-icon-152x152.png" />
-<link rel="apple-touch-icon" sizes="180x180" href="/assets/images/icons/apple-touch-icon-180x180.png" />
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/assets/images/icons/apple-touch-icon-precomposed.png" />
 <script src="/assets/js/bootstrap-native-v4.min.js"></script>
 <script src="/assets/js/imagesloaded.pkgd.min.js"></script>
 <script src="/assets/js/masonry.pkgd.min.js"></script>
 <script src="/assets/js/lazysizes.min.js"></script>
 <script src="/assets/js/script.js"></script>
-<title>{{ page.title }} - IlGattaRossa 1.314</title>
 {% feed_meta %}
-{% seo %}
+<title>{{ page.title }} - IlGattaRossa 1.314</title>
+<meta name="title" content="{{ page.title }}">
+{% if page.description %}
+<meta name="description" content="{{ page.description }}">
+{% elsif page.category == "Eventi" and page.subtitle %}
+<meta name="description" content="{{ page.subtitle }}">
+{% elsif page.category == "Eventi" %}
+<meta name="description" content="{{ page.content | truncatewords: 70 | strip_html }}">
+{% elsif page.category == "Video" %}
+<meta name="description" content="Video {{ page.subtitle }} {{ page.title }}">
+{% else %}
+<meta name="description" content="{{ site.description }}">
+{% endif %}
+<!-- Open Graph tags for facebook -->
+<meta property="og:title" content="{{ page.title }}">
+<meta name="author" content="{{ page.author }}" />
+{% if page.is_post %}
+<meta property="og:type" content="article">
+{% else %}
+<meta property="og:type" content="website">
+{% endif %}
+{% if page.image %}
+<meta property="og:image" content="{{ site.url | absolute_url }}{{ site.featured }}/1280/{{ page.image }}">  
+{% else %}
+<meta property="og:image" content="{{ site.url | absolute_url }}{{ site.og-image }}">
+<meta property="og:image:width" content="{{ site.og-image-width }}" />
+<meta property="og:image:height" content="{{ site.og-image-height }}" />
+{% endif %}
+<meta property="og:url" content="{{ page.url | absolute_url }}">
+{% if page.description %}
+<meta property="og:description" content="{{ page.description }}">
+{% elsif page.category == "Eventi" and page.subtitle %}
+<meta property="og:description" content="{{ page.subtitle }}">
+{% elsif page.category == "Eventi" %}
+<meta property="og:description" content="{{ page.content | truncatewords: 70 | strip_html }}">
+{% elsif page.category == "Video" %}
+<meta property="og:description" content="Video {{ page.subtitle }} {{ page.title }}">
+{% else %}
+<meta property="og:description" content="{{ site.description }}">
+{% endif %}
+<meta property="og:locale" content="{{ site.locale }}" />
+<meta property="og:site_name" content="{{ site.url }}" />
+<!-- twitter tags -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ page.url | absolute_url }}">
+<meta property="twitter:title" content="{{ page.title }}">
+{% if page.description %}
+<meta property="twitter:description" content="{{ page.description }}">
+{% elsif page.category == "Eventi" and page.subtitle %}
+<meta property="twitter:description" content="{{ page.subtitle }}">
+{% elsif page.category == "Eventi" %}
+<meta property="twitter:description" content="{{ page.content | truncatewords: 70 | strip_html }}">
+{% elsif page.category == "Video" %}
+<meta property="twitter:description" content="Video {{ page.subtitle }} {{ page.title }}">
+{% else %}
+<meta property="twitter:description" content="{{ site.description }}">
+{% endif %}
+{% if page.image %}
+<meta property="twitter:image" content="{{ site.url | absolute_url }}{{ site.featured }}/1280/{{ page.image }}">  
+{% else %}
+<meta property="twitter:image" content="{{ site.url | absolute_url }}{{ site.og-image }}">  
+{% endif %}
 </head>
 <body>
 {% include header.html %}

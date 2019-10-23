@@ -1,6 +1,6 @@
 ---
 event: Mistica Napoleonica
-description: IlGattaRossa è lieto di presentare Mistica Napoleonica, un progetto dell’artista Stefano Pascolini. Opere di pittura, sculture di ceramica e una performance dal vivo." 
+description: IlGattaRossa è lieto di presentare Mistica Napoleonica, un progetto dell’artista Stefano Pascolini. Opere di pittura, sculture di ceramica e una performance dal vivo.
 image: mn.jpg
 credits: un evento ideato da Stefano Pascolini - curato da Alberto Gori e Stefano Pascolini - testo di Cosma Galeni e IlGattaRossa - progetto grafico di Alberto Gori
 tags: [Arte, Buster Keaton, Ceramica, Dolci, Firenze, Mistica Napoleonica, Napoleone, Performance, Pittura, Scultura, Stefano Pascolini]

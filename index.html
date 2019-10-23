@@ -5,6 +5,7 @@ layout: default
 {% assign eventi = site.posts | where: "category", "Eventi" %}
 {% for post in eventi %}
 <header>
+<h1 class="post-title sr-only">{{ post.title }}<span>{{ post.subtitle }}</span></h1>    
 {% include img-featured.html type="home" %}
 </header>
 {% endfor %}

@@ -1,8 +1,33 @@
 <section class="post p-5">
     <article class="single mt-5 mx-auto">
         <section>
+            {% if post.category == "Foto" %}
+            <i class="fa fa-camera float-left"></i>
+            {% elsif post.category == "Video" %}
+            <i class="fa fa-video float-left"></i>
+            {% else %}
+            <i class="fa fa-keyboard float-left"></i>
+            {% endif %}
             <time datetime="{{ post.date }}">
-                <p>{{ post.date | date_to_string }}</p>
+            <p>
+            {% assign m = post.date | date: "%-m" %}
+              {{ post.date | date: "%-d" }}
+                {% case m %}
+                    {% when '1' %}Gennaio
+                    {% when '2' %}Febbraio
+                    {% when '3' %}Marzo
+                    {% when '4' %}Aprile
+                    {% when '5' %}Maggio
+                    {% when '6' %}Giugno
+                    {% when '7' %}Luglio
+                    {% when '8' %}Agosto
+                    {% when '9' %}Settembre
+                    {% when '10' %}Ottobre
+                    {% when '11' %}Novembre
+                    {% when '12' %}Dicembre
+                {% endcase %}
+                {{ post.date | date: "%Y" }}
+            </p>
             </time>
             {% if post.category == "Eventi" %}
             <h1 class="post-title pt-3 pt-md-5">{{ post.title }}</h1>

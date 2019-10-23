@@ -35,6 +35,10 @@ body {
 	        animation: fade-out 0.5s ease-out both;
 }
 
+.fade-out-long {
+    -webkit-animation:fade-out 2s ease-out 3s both;
+            animation:fade-out 2s ease-out 3s both}
+
 #nav-igr { 
     display: none;
     opacity: 0.96;
@@ -101,7 +105,7 @@ aside#related img:hover { opacity: 1; }
 
 .grid-sizer, 
 .grid-item { width: 100%; } 
-
+.grid-item { margin: 0.125rem !important; }
 
 section.credits {
     background: #f8f8f8;
@@ -133,7 +137,10 @@ footer.post img { transform: rotate(-3deg); }
 .r { color: #ff5700; }
 .e { color: #444444; }
 
-
+.related-icon i {
+    line-height: 1.5;
+}
+    
 ul.igr-tag { padding: 0; }
 ul.igr-tag li {
     display: inline-block;
@@ -253,10 +260,22 @@ figcaption {
 
 #footer-image { opacity: 0.9; }
 
-aside#related {
-    text-align: center;
-    
+section#footer { 
+    background: #333; 
+    color: #ced4da;
+    opacity: 0.9; 
 }
+
+section#footer a { color: #d9534f; }
+
+section#footer .form-control {
+    background-color: transparent;
+    color: #f8f9fa;
+}
+
+section#footer .form-control::placeholder { color: #ced4da; }
+
+aside#related { text-align: center; }
 
 aside#related .title {
     overflow: hidden;
@@ -310,6 +329,7 @@ aside#related .title {
     aside#related header { 
         flex: 0 0 100%;
     }
+    .related-icon i { padding-right: 15px; } 
      
 }
 
@@ -348,3 +368,5 @@ code, pre {
 @keyframes rotate-in-center{0%{-webkit-transform:rotate(-360deg);transform:rotate(-360deg);opacity:0}100%{-webkit-transform:rotate(0);transform:rotate(0);opacity:1}}
 @-webkit-keyframes fade-out{0%{opacity:1}100%{opacity:0}}
 @keyframes fade-out{0%{opacity:1}100%{opacity:0}}
+@-webkit-keyframes fade-out-long{0%{opacity:1}100%{opacity:0}}
+@keyframes fade-out-long{0%{opacity:1}100%{opacity:0}}

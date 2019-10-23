@@ -14,13 +14,21 @@ window.onload = function() {
 
 window.onscroll = function() {
     var navbar = document.getElementById("main-navbar");
+    var menu = document.getElementById("menu-button");
     var igr = document.getElementById("nav-igr");
     var header = document.getElementById("main-header");
-    var pos = 0;
+    
+    navbar.classList.remove("fade-out-long");
+    navbar.onmouseover = function(){ navbar.classList.remove("fade-out-long"); };
+    menu.ontouchstart = function(){ navbar.classList.remove("fade-out-long"); };
     
     if (document.body.scrollTop > header.scrollHeight || document.documentElement.scrollTop > header.scrollHeight ) {
+            navbar.classList.add("fade-out-long");
             igr.classList.remove("fade-out");
             setTimeout(function(){ igr.style.display = "block"; }, 2);
             setTimeout(function(){ igr.classList.add("rotate-in-center"); }, 1);
-    } else { igr.classList.add("fade-out"); } 
+    } else { 
+            navbar.classList.remove("fade-out-long");
+            igr.classList.add("fade-out"); 
+        } 
 };

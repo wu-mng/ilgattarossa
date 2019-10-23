@@ -1,11 +1,12 @@
-locale:         "it-IT"
-# feed and opengraph options
-title:          "ilgattarossa.org"
-author:         "1G°R"
-description:    "IlGattarossa è (stato) il folle tentativo di un gruppo di artisti di portare la propria Opera al pubblico senza mediazioni"
-lang:           "it_IT"
+url: https://ilgattarossa.netlify.com/
+lang: it
+locale: "it-IT"
+description: "IlGattarossa è (stato) il folle tentativo di un gruppo di artisti di portare la propria Opera al pubblico senza mediazioni"
+images: /assets/images
+og-image: /assets/images/igr_og.png
+og-image-width: 1200
+og-image-height: 630
 # default paths for images
-images:         /assets/images
 featured:       /assets/images/featured
 galleries:      /assets/images/galleries
 responsive:     /assets/images/responsive
@@ -20,16 +21,19 @@ srcset:
 defaults:    
   - scope:
       path: ""
+    values:
+      author: "1G°R"
+  - scope:
+      path: ""
       type: "pages"
     values:
-      image: /assets/images/igr_sticker_45.png
       title: "ilgattarossa.org"
   - scope:
       path: ""
       type: "posts"
     values:
       layout: "post"
-      description: "IlGattarossa è (stato) il folle tentativo di un gruppo di artisti di portare la propria Opera al pubblico senza mediazioni"
+      description: 
   - scope:
       path: "_posts/eventi"
       type: "posts"  

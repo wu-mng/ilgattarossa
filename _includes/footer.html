@@ -1,3 +1,37 @@
 <footer class="mt-5">
 {% include img.html id="footer-image" class="img-full" src="footer_1906_wide.png" alt="IlGattaRossa contemplating Florence's landscape" width="1906" height="311" %}
+<section id="footer" class="row justify-content-center">
+    <form name="Contatti" id="contatti" class="col-lg-4 p-5" netlify>
+      <h1>Contatti</h1>  
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputname" class="sr-only">Nome</label>  
+          <input type="name" class="form-control" id="inputname" placeholder="Nome" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputemail" class="sr-only">Email</label>  
+          <input type="email" class="form-control" id="inputemail" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="text" class="sr-only">Messaggio</label>  
+        <textarea class="form-control" rows="6" id="text" placeholder="Messaggio" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-outline-light btn-lg">Invia</button>
+    </form>
+    <section class="col-lg-4 p-5">
+        <h3>Licenza</h3>
+        <p>Il materiale originale pubblicato su questo sito è rilasciato con 
+        una licenza <a rel="license noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.it" target="_blank">
+        Creative Commons by-nc-sa 4.0 </a>: può essere riprodotto e modificato 
+        liberamente a patto di citare <a href="https://ilgattarossa.org">Il GattaRossa</a> 
+        come autore originale, di non usarlo per fini commerciali e di pubblicare il lavoro 
+        derivato con la stessa licenza. </p>
+        <h3>Crediti</h3>
+        Design e codice di <a href="https://albertogori.net/" target="_blank" rel="designer noopener noreferrer">Alberto Gori</a> su
+        piattaforma <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> 
+        e framework <a href="https://getbootstrap.com" target="_blank" rel="noopener noreferrer">Bootstrap</a>
+        
+    </section>    
+</section>
 </footer>

@@ -31,11 +31,17 @@
             {% endif %}
             
             |
-            <article class="p-2">
+            <article class="p-2 mb-5">
 <!--
                 <strong>{{ tagsTotal }} tags</strong>
 -->
-                <header>
+                <header class="related-icon">
+                    {% if post.category == "Foto" %}
+                    <i class="fa fa-camera float-left"></i>
+                    {% endif %}
+                    {% if post.category == "Video" %}
+                    <i class="fa fa-video float-left"></i>
+                    {% endif %}
                     <a href="{{ site.baseurl }}{{ post.url }}">    
                     <h5 class="title pb-1">{{ post.title }}</h5>
                     </a>    

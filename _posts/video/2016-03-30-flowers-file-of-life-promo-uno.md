@@ -3,7 +3,7 @@ event: Flower's File of Life
 image: 563013092_1080.jpg
 video: <iframe data-src="https://player.vimeo.com/video/160873237?color=d21f1b&title=0&byline=0&portrait=0" class="lazyload" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 title: "Flower's // File of Life"
-subtitle: Video Promo#00
+subtitle: Promo#00
 credits: Video di Alberto Gori
 tags: [Alberto Gori, Andy Warhol, arte, Arte dello Schermo, Firenze, Flowers, Francesca Pirami, Iacopo Rachlick, IlGattaRossa, Installazione, Krishna Biswas, Luca Mauceri, MediaMashStudio, now!, Videoarte]
 ---

@@ -2,7 +2,7 @@
 event: GattaRossa Coming Soon Allegoria del Viaggio
 image: gcs_av.jpg
 title: "GattaRossa Coming Soon: Allegoria del Viaggio"
-credits: Un evento ideato da IlGattaRossa - progetto grafico di Alberto Gori
+credits: un evento ideato da IlGattaRossa - progetto grafico di Alberto Gori - foto di Alberto Gori
 tags: [Alberto Gori, Alessandro Di Grande, Andrea Lucchesi, Anna Capolupo, Arte, Associazione La Stazione, Carlotta Mazzoli, Disegno, Giampaolo Coppini, Incisione, Luca Mauceri, Marco Zamburru, Pittura, San Miniato, Sara Bandini, Videoarte, Yasmine Dainelli]
 ---
 In collaborazione con [Associazione La Stazione](http://www.centrogiovanilastazione.org)  

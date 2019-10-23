@@ -1,6 +1,6 @@
 ---
 event: Flower's File of Life
-title: "Flower's // File of Life"
+description: Flower’s // File of Life è un lavoro corale, dove le opere site-specific sono in stretta relazione l’una con l’altra, e hanno come tema il ciclo vitale naturale di Creazione, Conservazione e Distruzione. Le videoinstallazioni, caratterizzate da un’estetica che mira a riconnettere misticismo e tecnologia, vanno a comporre una sorta di rituale di trasformazione e purificazione.
 subtitle: Azione di rigenerazione dedicata alla Primavera
 image: flower_s.png
 credits: Un evento ideato da Alberto Gori - curato da Alberto Gori, Luca Mauceri e Iacopo Rachlick - testo di Alberto Gori e Luca Mauceri - progetto grafico di Alberto Gori
